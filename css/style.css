@@ -283,6 +283,9 @@ line-height: 26px;
 .ba-row{
 	margin-left: -8px;
 }
+[class*="ba-col-"] a{
+	display: block;
+}
 [class*="ba-col-"]{
 	float: left;
 	padding-left: 8px;
@@ -296,7 +299,7 @@ line-height: 26px;
  .ba-work img{
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	object-fit: cover;
 } 
  
@@ -313,25 +316,245 @@ line-height: 26px;
 .ba-images{
 	background:#020407 ;
 }
+/* Info */
+
+.ba-info{
+	background:#020407 ;
+}
+.ba-info__back{
+	padding: 290px 0 100px;
+}
+.ba-info__main{
+	background: #ef4836;
+	padding: 140px 70px 140px 85px;
+	position: relative;
+}
+.ba-info-picture{
+	position: absolute;
+	top: -55px;
+}
+.ba-rel{
+	position: relative;
+}
+.ba-info-block{
+	display: flex;
+}
+.ba-info__parag{
+	font-style: italic;
+	padding-bottom: 20px;
+}
+.ba-info__parag:before{
+	content: "";
+	height: 1px;
+	width: 90px;
+	display: inline-block;
+	background: #fff;
+	position: absolute;
+	top: 12px;
+    left: -115px;
+}
+.ba-info__author{
+	font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+}
+
+/* Logotipe */
+
+.ba-logotip{
+	background: #020407;
+	padding: 50px 25px 100px;
+}
+.ba-logotip-motto{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Form */
+.ba-contact{
+	background: #020407;
+}
+
+.ba-contact__col-left {
+  background: #205cb2 url("../img/bg-girl.jpg") no-repeat 50%/cover;
+  width: 40.2%;
+  padding-left: 82px;
+  padding-top: 47px; 
+  }
+
+.ba-contact__col-right {
+  position: relative;
+  width: 59.8%;
+  background: #131313; 
+  }
+
+.ba-contact__row {
+   display: flex;
+    }
+
+.ba-contact__col-right form {
+   display: flex;
+    flex-direction: column;
+  max-width: 395px;
+  margin-bottom: 41px; 
+  }
+
+.ba-contact__subtitle p {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  margin-bottom: 0; 
+  }
+
+.ba-contact__subtitle a {
+  display: block;
+  font-size: 14px;
+  text-decoration: none; 
+  color: #fff;
+  }
+  .ba-contact__subtitle a:hover {
+    color: #fff111;
+  }
+
+.ba-contact__col-right {
+  padding-left: 58px;
+  padding-top: 19px; 
+  }
+
+.ba-contact__title {
+	font-weight: 300;
+  font-size: 30px;
+  padding-left: 2px;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px; 
+  }
+
+.ba-contact__col-right:before {
+  position: absolute;
+  content: " ";
+  width: 90px;
+  height: 1px;
+  border-top: 1px solid #fff;
+  top: 65px;
+  left: -69px; 
+  }
+
+.ba-contact__subtitle {
+  max-width: 180px; 
+  }
+
+.ba-button {
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.04em; 
+  }
+
+.ba-contact button {
+  background: transparent;
+  border: 0;
+  max-width: 40%;
+  text-align: left;
+  color: #ef4836;
+   }
+
+.ba-contact button:hover {
+  color: #fff; 
+  }
+
+.ba-button svg, button svg {
+  vertical-align: middle;
+  fill: currentcolor;
+   transition: transform .3s ease-in;
+  }
+
+.ba-button:hover svg, button:hover svg {
+   transform: translateX(10px);
+    transition: transform .3s ease-in;
+ }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #525252;
+  background: transparent;
+  padding-left: 10px;
+  padding-top: 26px;
+  padding-bottom: 12px;
+  color: #525252;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; 
+  }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  border-bottom: 1px solid #2866bd;
+  color: #2866bd; 
+ }
 
 
+input:focus::placeholder {
+  color: #2866bd;
+ }
 
+textarea {
+ margin-bottom: 42px; 
+ }
+/* Footer */
 
+.ba-footer{
+	background: #020407 ;
+}
+.ba-footer__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    }
 
+.ba-footer__colleft {
+  display: flex;
+  align-items: center;
+  color: #525252;
+  font-size: 14px;
+   }
 
+.ba-footer__logo {
+  margin-right: 20px;
+   }
 
+.ba-ba-footer__social-ico {
+  text-decoration: none;
+   }
 
+.ba-ba-footer__social-ico svg {
+  fill: #fff;
+  margin-left: 10px;
+   }
 
+.ba-ba-footer__social-ico:hover svg {
+  fill: #2866bd;
+   }
 
+.ba-footer {
+  padding-top: 50px; 
+  }
 
-
-
-
-
-
-
-
-
+defs{
+	display: none;
+}
 
 
 
